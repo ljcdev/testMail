@@ -9,9 +9,9 @@
 
 // $mail = new PHPMailer(true);
 
-if(isset($_POST['btn']))
+if(isset($_GET['btn']))
 {
-    extract($_POST);
+    extract($_GET);
     var_dump($message);
     // try {
     //     //Server settings
