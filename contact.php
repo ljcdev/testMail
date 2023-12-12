@@ -9,8 +9,9 @@ require 'vendor/autoload.php';
 
 $mail = new PHPMailer(true);
 
-if(isset($_POST))
+if(isset($_POST['btn']))
 {
+    extract($_POST);
     try {
         //Server settings
         $mail->isSMTP();                                            //Send using SMTP
